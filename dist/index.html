@@ -10,6 +10,7 @@
         -o-background-size: cover;
         background-size: cover;
         font-family: Sofia;
+        overflow-x:hidden;
 }
       .parent{
         display: flex;
@@ -32,6 +33,7 @@
       .parent>div:hover{
           color:red;
           transform: scale(1.1);
+          cursor: pointer;
         
          
 
@@ -48,7 +50,7 @@
       .header{
           background-color: rgba(0,0,0,0.9);
           margin-top:-1rem;
-          margin-right:-0.5rem;
+          margin-right:-0.4rem;
           margin-left:-0.5rem;
           
           height:18rem;
@@ -91,12 +93,13 @@
     .menu{
     
         position:relative;
-        margin-left: 100px;
+        margin-left: 50px;
         margin-right:100px;
         margin-top:130px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
+        width:100%;
     
     
 
@@ -113,7 +116,7 @@
         border:2px solid black;
         border-radius: 1%;
         text-align: left;
-        padding-left: 20px;
+        
         border-radius: 1%;
         
     }
@@ -194,6 +197,27 @@
         font-size:2rem;
         top:-10px;
     }
+    .copyright{
+        position:relative;
+        font-size:1.5rem;
+        color:white;
+        height:2rem;
+        width:102%;
+        background:rgba(0,0,0,0.6);
+        margin-top:2rem;
+        bottom:-10px;
+        margin-left: -10px;
+        margin-right: 100px;
+        text-align: center;
+    }
+    .link{
+        display:inline-block;
+    }
+    .githubicon{
+        position:relative;
+        top:3px;
+        height:1.7rem;
+    }
 
     
 
@@ -205,7 +229,7 @@
     <div id="content">
   
         <script src="main.js">
-</script>
+        </script>
 
 
  

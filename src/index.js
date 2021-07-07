@@ -24,9 +24,11 @@ function createNav(){
     home.addEventListener('click',(e)=>{
      
         content.removeChild(content.children[content.children.length-1]);
+        content.removeChild(content.children[content.children.length-1]);
     
    
         content.appendChild(createHome());
+        content.appendChild(createFooter())
     });
 
     let menu=document.createElement('div');
@@ -34,9 +36,12 @@ function createNav(){
     menu.textContent="Menu";
     menu.addEventListener('click',(e)=>{
         content.removeChild(content.children[content.children.length-1]);
+        content.removeChild(content.children[content.children.length-1]);
     
    
         content.appendChild(createMenu());
+        content.appendChild(createFooter())
+       
     });
 
     let contact=document.createElement('div');
@@ -44,9 +49,12 @@ function createNav(){
     contact.textContent="Contact";
     contact.addEventListener('click',(e)=>{
         content.removeChild(content.children[content.children.length-1]);
+        content.removeChild(content.children[content.children.length-1]);
     
    
         content.appendChild(createContact());
+        content.appendChild(createFooter())
+        
     });
     container.appendChild(home);
     container.appendChild(menu);
@@ -60,10 +68,39 @@ function createNav(){
 }
 
 
+function createFooter(){
+    console.log(3);
+    let footer=document.createElement('footer');
+    let copyRight=document.createElement('div');
+    copyRight.classList.add("copyright");
+    let information=document.createElement('span');
+    information.textContent=" Copyright © 2021 dominator-220";
+    let githublink=document.createElement('a');
+    githublink.href="https://github.com/dominator-220";
+    githublink.target="_blank";
+    githublink.classList.add("link");
+    let logo=document.createElement('img');
+    logo.src="github.png";
+    logo.classList.add('githubicon');
+    githublink.append(logo);
+    copyRight.append(information);
+    copyRight.append(githublink);
+    footer.append(copyRight);
+
+
+    return footer;
+    
+}
+
 const content=document.querySelector("#content");
 
 content.appendChild(createHeader());
+
 content.appendChild(createHome());
+content.appendChild(createFooter());
+
+
 
 
 //content.appendChild(createMenu());
+
