@@ -16,6 +16,9 @@ function createNav(){
     let restaurantName=document.createElement('div');
     restaurantName.classList.add('RestaurantName');
     restaurantName.textContent='Montipasto';
+    let pizzalogo=document.createElement('img');
+    pizzalogo.src="images/pizza.jpg";
+    pizzalogo.classList.add('pizzalogo');
     let container=document.createElement('div');
     container.classList.add('parent');
     let home=document.createElement('div');
@@ -60,6 +63,7 @@ function createNav(){
     container.appendChild(menu);
     container.appendChild(contact);
     nav.append(restaurantName);
+ 
     nav.append(container);
     return nav;
 
@@ -80,7 +84,7 @@ function createFooter(){
     githublink.target="_blank";
     githublink.classList.add("link");
     let logo=document.createElement('img');
-    logo.src="github.png";
+    logo.src="images/github.png";
     logo.classList.add('githubicon');
     githublink.append(logo);
     copyRight.append(information);

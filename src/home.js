@@ -5,7 +5,7 @@ function createHome(){
     let child2=createDiv(" Best pizzas grilled with cheese mozzarella and pepperoni","dealcontent2");
     let child3=createDiv("Every bite is a delight","dealcontent3");
     let chefImg=document.createElement('img');
-    chefImg.src="chef.jpg";
+    chefImg.src="images/chef.jpg";
     chefImg.classList.add('chef');
     poster.appendChild(child1);
     poster.appendChild(child2);
