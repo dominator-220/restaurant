@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+       html{
+        background:url(background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Sofia;
+}
       .parent{
         display: flex;
         flex-direction: row;
@@ -9,7 +18,7 @@
     
         justify-content: center;
         align-items: center;
-        margin-top:-1rem;
+        margin-top:-5rem;
 
       }
       .parent>div{
@@ -30,24 +39,178 @@
       .RestaurantName{
           font-size:80px;
           font-family: 'Shrikhand',cursive;
+          padding-top: 2rem;
           
-          color: white;
+          color:white;
           text-align: center;
 
       }
       .header{
           background-color: rgba(0,0,0,0.9);
+          margin-top:-1rem;
+          margin-right:-0.5rem;
+          margin-left:-0.5rem;
+          
+          height:18rem;
       }
+      #poster{
+          position: relative;
+          margin:0 auto;
+          height:36rem;
+          width:40rem;
+          background-color:rgba(0,0,0,0.6);
+          
+    
+          margin-top:3rem;
+          
+      }
+      .chef{
+          height: 20rem;
+          width:20rem;
+          border: 2px solid black;
+          border-radius: 50%;
+          margin-left: 9rem;
+          margin-top:1rem;
+          
+      }
+      .dealcontent1,.dealcontent2,.dealcontent3{
+        font-family: 'Akaya Kanadaka';
+        font-size: 45px;;
+        color:white;
+
+      }
+      .dealcontent1,.dealcontent3{
+          text-align: center;
+      }
+      .dealcontent1{
+          color:orange;
+      }
+      .dealcontent2{
+          margin-left: 3rem;
+      }
+    .menu{
+    
+        position:relative;
+        margin-left: 100px;
+        margin-right:100px;
+        margin-top:130px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    
+    
+
+    }
+
+    .menu> div {
+        background-color:rgba(0, 0, 0);
+        text-align: center;
+        color:white;
+        padding: 20px ;
+        font-size:  37px;
+        height:394px;
+        width:450px;
+        border:2px solid black;
+        border-radius: 1%;
+        text-align: left;
+        padding-left: 20px;
+        border-radius: 1%;
+        
+    }
+    .dishimages{
+        height:15rem;
+        width:28rem;
+        margin-top: 15px;
+        margin-left:0rem;
+    }
+    .info{
+        font-size: 1.43rem;
+        color:rgba(110, 248, 68, 0.9);
+        font-family:'Akaya Kanadaka';
+    }
+    .pizzaname{
+        text-align: center;
+        color:orange;
+    }
+    .contact{
+        position: relative;
+        margin:0 auto;
+        height:44rem;
+        width:40rem;
+        background-color:rgba(0,0,0,0.6);
+        font-size:3rem;
+        color:white;
+        font-family:'Shrikhand',cursive;
+          
+    
+        margin-top:3rem;
+
+    }
+    .Address,.phone{
+        margin-left: 10px;
+        
+    
+    }
+    .Address{
+        font-size: 2rem;
+    }
+    .phoneimg,.adressimg{
+        position:relative;
+        height:3rem;
+        top: 7px;
+        left:-5px;
+    }
+    .adressimg{
+        opacity:1;
+
+    }
+    .maps{
+        
+    }
+    .map{
+        position:relative;
+        height:20rem;
+        width:39rem;
+        top: 7px;
+        left:8px;
+    }
+    .mail{
+        position:relative;
+        left:30px;
+        font-size:2rem;
+        top:-10px;
+    }
+    .mailimg,.instaimg{
+        position:relative;
+        left:-15px;
+        top:12px;
+
+
+
+    }
+    .insta{
+        position:relative;
+        left:30px;
+        font-size:2rem;
+        top:-10px;
+    }
+
+    
+
+    
     </style>
 </head>
 
 <body>
     <div id="content">
-
+  
         <script src="main.js">
-        </script>
+</script>
+
+
+ 
+ 
         
     </div>
 
 </body>
-

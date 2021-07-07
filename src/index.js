@@ -1,3 +1,8 @@
+
+import createHome from "./home"
+import createMenu from "./menu"
+import createContact from "./contact"
+
 function createHeader(){
     let header=document.createElement('header');
     header.classList.add('header');
@@ -16,14 +21,33 @@ function createNav(){
     let home=document.createElement('div');
     home.setAttribute("id","home");
     home.textContent="Home";
+    home.addEventListener('click',(e)=>{
+     
+        content.removeChild(content.children[content.children.length-1]);
+    
+   
+        content.appendChild(createHome());
+    });
 
     let menu=document.createElement('div');
     menu.setAttribute("id","menu");
     menu.textContent="Menu";
+    menu.addEventListener('click',(e)=>{
+        content.removeChild(content.children[content.children.length-1]);
+    
+   
+        content.appendChild(createMenu());
+    });
 
     let contact=document.createElement('div');
     contact.setAttribute("id","contact");
     contact.textContent="Contact";
+    contact.addEventListener('click',(e)=>{
+        content.removeChild(content.children[content.children.length-1]);
+    
+   
+        content.appendChild(createContact());
+    });
     container.appendChild(home);
     container.appendChild(menu);
     container.appendChild(contact);
@@ -34,5 +58,12 @@ function createNav(){
 
 
 }
-let content=document.querySelector("#content");
+
+
+const content=document.querySelector("#content");
+
 content.appendChild(createHeader());
+content.appendChild(createHome());
+
+
+//content.appendChild(createMenu());
